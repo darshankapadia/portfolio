@@ -102,19 +102,29 @@ footer a {
 }
 /* Styles for the "Get in touch" button */
 .get-in-touch {
-    display: inline-block;
-    margin: 20px auto;
-    padding: 10px 20px;
+    position: absolute; /* Allows precise positioning */
+    top: 20px; /* Adjust to position vertically (relative to the header) */
+    right: 20px; /* Push the button to the extreme right */
+    padding: 10px 25px; /* Adjust padding for button size */
     background-color: #48AAAD;
     color: white;
     font-size: 1.2em;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 20px; /* More curved edges */
     transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Ensures proper alignment */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
 }
 
 .get-in-touch:hover {
-    background-color: #34495e;
-    transform: scale(1.1);
+    background-color: #34495e; /* Darker background on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* For the header section to make position relative */
+header {
+    position: relative; /* Ensures the button is positioned within the header */
+    padding: 20px; /* Add spacing around header */
+    text-align: center; /* Center the main content in the header */
 }
