@@ -103,7 +103,7 @@ footer a {
 /* Styles for the "Get in touch" button */
 .get-in-touch {
     position: absolute; /* Allows precise positioning */
-    top: 20px; /* Adjust to position vertically (relative to the header) */
+    bottom: 20px; /* Adjust to position vertically (relative to the header) */
     right: 20px; /* Push the button to the extreme right */
     padding: 10px 25px; /* Adjust padding for button size */
     background-color: #48AAAD;
