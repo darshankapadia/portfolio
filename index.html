@@ -83,6 +83,47 @@
 		footer div a:hover {
 			color: #48AAAD; /* Berry Colour */
 		}
+		/* Footer styles */
+		footer {
+			text-align: center;
+			padding: 20px 0;
+			background-color: #333;
+			color: white;
+		}
+
+		footer a {
+			color: white;
+			text-decoration: none;
+		}
+
+		.social-icons {
+			margin-bottom: 20px;
+		}
+
+		.social-icons a {
+			margin: 0 15px;
+			font-size: 2em; /* Increase icon size */
+			transition: transform 0.3s ease; /* Add animation */
+		}
+
+		.social-icons a:hover {
+			transform: scale(1.2); /* Slight zoom-in on hover */
+			color: #48AAAD; /* Change color on hover */
+		}
+
+		.contact-info {
+			display: flex;
+			justify-content: center;
+			gap: 30px; /* Space between items */
+			flex-wrap: wrap; /* Wrap to the next line if needed */
+			font-size: 1.2em; /* Increase text size */
+			margin-top: 10px;
+		}
+
+		.contact-info div {
+			text-align: center; /* Center-align the text in each column */
+		}
+
     </style>
 </head>
 <body>
@@ -113,8 +154,7 @@
 </div>
 
 <footer>
-	<!-- <p>Connect with me: <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a></p>	-->
-    <div>
+    <div class="social-icons">
         <a href="https://www.linkedin.com/in/darshan-kapadia-488746199/" target="_blank">
             <i class="fab fa-linkedin"></i>
         </a>
