@@ -7,6 +7,41 @@ body {
     padding: 0;
 }
 
+/* Upper Footer (Sticky Navigation Bar) */
+.upper-footer {
+    position: fixed; /* Sticks to the top */
+    top: 0; /* Align to the top */
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #2c3e50; /* Dark background */
+    color: white; /* Text color */
+    padding: 10px 0; /* Vertical padding */
+    z-index: 1000; /* Ensure it stays above all other elements */
+    display: flex;
+    justify-content: center; /* Center the links */
+    gap: 30px; /* Space between links */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Navigation Link Styles */
+.nav-link {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1em; /* Slightly larger text */
+    font-weight: bold; /* Make text bold */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Hover Effect for Links */
+.nav-link:hover {
+    color: #48AAAD; /* Highlight color */
+}
+
+/* Offset body to prevent content from hiding behind the sticky nav */
+body {
+    padding-top: 50px; /* Adjust based on the height of the upper footer */
+}
+
 /* Header styles */
 header {
     background-color: #34495e;
