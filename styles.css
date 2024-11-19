@@ -259,3 +259,25 @@ header {
     transform: scale(1.2); /* Zoom in */
     color: #48AAAD; /* Optional: Change color during zoom */
 }
+.footer-links {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+    margin-right: 20px; /* Add spacing from the right edge */
+    padding-right: 10px; /* Prevent overlap with the scrollbar */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 5px 10px;
+    border: 2px solid transparent; /* For hover animation */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #48AAAD; /* Change color on hover */
+    border-color: #48AAAD; /* Add a border effect */
+}
