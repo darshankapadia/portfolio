@@ -91,5 +91,17 @@
     AOS.init();
 </script>
 
+<script>
+    // Add class when scrolling down
+    window.addEventListener("scroll", function () {
+        const upperFooter = document.querySelector(".upper-footer");
+        if (window.scrollY > 10) {
+            upperFooter.classList.add("scrolled");
+        } else {
+            upperFooter.classList.remove("scrolled");
+        }
+    });
+</script>
+
 </body>
 </html>
