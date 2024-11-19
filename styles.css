@@ -93,35 +93,22 @@ p {
     padding: 20px;
 }
 
-..project {
+.project {
     background-color: #ecf0f1;
     margin: 20px 0;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project:hover {
-    transform: scale(1.02); /* Slight zoom-in effect on hover */
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow */
 }
 
 .project h2 {
     color: #333;
-    font-size: 1.8em;
 }
 
 .project a {
     text-decoration: none;
     color: #4CAF50;
     font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.project a:hover {
-    color: #48AAAD; /* Highlight on hover */
-    transform: scale(1.1); /* Slight zoom effect */
 }
 
 /* Footer styles */
@@ -166,23 +153,23 @@ footer a {
 }
 /* Styles for the "Get in touch" button */
 .get-in-touch {
-    position: absolute; /* Position inside the header */
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 25px; /* Adjust padding for better spacing */
+    position: absolute; /* Allows precise positioning */
+    bottom: 20px; /* Adjust to position vertically (relative to the header) */
+    right: 20px; /* Push the button to the extreme right */
+    padding: 10px 25px; /* Adjust padding for button size */
     background-color: #48AAAD;
     color: white;
     font-size: 1.2em;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 25px; /* Smooth rounded edges */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Add hover animation */
-    display: inline-block;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add depth with shadow */
+    border-radius: 20px; /* More curved edges */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Ensures proper alignment */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
 }
 
 .get-in-touch:hover {
-    background-color: #34495e; /* Darker shade on hover */
+    background-color: #34495e; /* Darker background on hover */
     transform: scale(1.1); /* Slight zoom effect */
 }
 
@@ -196,8 +183,8 @@ header {
 /* About Me Section */
 .about-me {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
     padding: 50px 20px; /* Add padding for spacing */
     background-color: #f7f7f9; /* Light background for contrast */
 }
@@ -211,9 +198,7 @@ header {
     max-width: 800px; /* Limit the container's width */
     text-align: center; /* Center-align text inside the container */
     animation: fadeIn 1.5s ease; /* Apply custom fade-in animation */
-    width: 90%; /* Make it responsive for smaller screens */
 }
-
 
 /* Heading styles */
 .about-container h2 {
@@ -263,13 +248,13 @@ header {
     font-size: 1.5em; /* Default size */
     font-weight: bold;
     color: white;
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation for zoom and color */
+    transition: transform 0.3s ease; /* Smooth zoom animation */
 }
 
 /* Zoom Effect: Add scaling when scrolled */
 .footer-name.scrolled {
-    transform: scale(1.2); /* Zoom in on scroll */
-    color: #48AAAD; /* Change color during zoom */
+    transform: scale(1.2); /* Zoom in */
+    color: #48AAAD; /* Optional: Change color during zoom */
 }
 .footer-links {
     display: flex;
@@ -294,22 +279,20 @@ header {
     border-color: #48AAAD; /* Add a border effect */
 }
 
-/* .upper-footer .name { */
-    /* font-size: 1.5em; */
-    /* font-weight: bold; */
-    /* color: white; */
-    /* margin-left: 60px; */
-    /* padding-left: 10px; */
-    /* transform-origin: left center; /* Ensure zoom happens from the left */ */
-    /* transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Slow down the animation */ */
-/* } */
+.upper-footer .name {
+    font-size: 1.5em; /* Keep the font size consistent */
+    font-weight: bold;
+    color: white;
+	margin-Left: 60px;
+    Padding-left: 60px; /* Add space from the left edge */
+    transform-origin: left center; /* Ensure zoom happens from the left */
+    transition: transform 0.6s ease-in-out; /* Slow down the animation */
+}
 
-/* .upper-footer .name.zoom-out { */
-    /* transform: scale(1); /* Normal size on zoom-out */ */
-/* } */
+.upper-footer .name.zoom-out {
+    transform: scale(1); /* Slightly larger scale on zoom-in */
+}
 
-/* .upper-footer .name.zoom-in { */
-    /* transform: scale(1.2); /* Slightly larger size on zoom-in */ */
-/* } */
-/* } */
-
+.upper-footer .name.zoom-in {
+    transform: scale(1); /* Normal scale on zoom-out */
+}
