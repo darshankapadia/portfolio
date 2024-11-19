@@ -246,3 +246,16 @@ header {
         transform: scale(1); /* Full size */
     }
 }
+/* Name Zoom Animation */
+.footer-name {
+    font-size: 1.5em; /* Default size */
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease; /* Smooth zoom animation */
+}
+
+/* Zoom Effect: Add scaling when scrolled */
+.footer-name.scrolled {
+    transform: scale(1.2); /* Zoom in */
+    color: #48AAAD; /* Optional: Change color during zoom */
+}

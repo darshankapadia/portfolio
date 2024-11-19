@@ -84,16 +84,17 @@
 </script>
 
 <script>
-    // Add class when scrolling down
+    // Detect scroll and apply zoom-in to the name
     window.addEventListener("scroll", function () {
-        const upperFooter = document.querySelector(".upper-footer");
+        const footerName = document.querySelector(".footer-name");
         if (window.scrollY > 10) {
-            upperFooter.classList.add("scrolled");
+            footerName.classList.add("scrolled"); // Apply zoom-in
         } else {
-            upperFooter.classList.remove("scrolled");
+            footerName.classList.remove("scrolled"); // Revert to normal
         }
     });
 </script>
+
 
 </body>
 </html>
