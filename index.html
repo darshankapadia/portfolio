@@ -95,6 +95,19 @@
     });
 </script>
 
+<script>
+    // JavaScript for handling the zoom effect on scroll
+    window.addEventListener("scroll", () => {
+        const nameElement = document.querySelector(".upper-footer .name");
+        if (window.scrollY > 0) {
+            nameElement.classList.add("zoom-out");
+            nameElement.classList.remove("zoom-in");
+        } else {
+            nameElement.classList.add("zoom-in");
+            nameElement.classList.remove("zoom-out");
+        }
+    });
+</script>
 
 </body>
 </html>
