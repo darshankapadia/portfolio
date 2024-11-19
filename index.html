@@ -18,7 +18,7 @@
     <div class="footer-links">
         <a href="#about" class="nav-link">About Me</a>
         <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Get in Touch</a>
+        <a href="#contact" class="nav-link" id="get-in-touch-link">Get in Touch</a>
     </div>
 </div>
 
@@ -59,22 +59,27 @@
 </section>
 
 <!-- Add the "id" to the footer -->
+
 <footer id="contact">
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/darshan-kapadia-488746199/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://x.com/kapadia_darshan?t=x1hpecUCXu48PCAcPRoDBA&s=09" target="_blank">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.instagram.com/darshan45_?igsh=em9nc2Y1bXA0OHY5" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
-    </div>
-    <div class="contact-info">
-        <div>📍 Address: Khar West, Mumbai, Maharashtra, India</div>
-        <div>📧 Email: <a href="mailto:Darshan.v.kapadia@gmail.com">Darshan.v.Kapadia@gmail.com</a></div>
-        <div>📞 Phone: +91 9969-71-81-91</div>
+    <div class="footer-content">
+        <h2>Contact Me</h2>
+        <p>Feel free to connect with me via social media or email!</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/darshan-kapadia-488746199/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/kapadia_darshan?t=x1hpecUCXu48PCAcPRoDBA&s=09" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/darshan45_?igsh=em9nc2Y1bXA0OHY5" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <div class="contact-info">
+            <div>📍 Address: Khar West, Mumbai, Maharashtra, India</div>
+            <div>📧 Email: <a href="mailto:Darshan.v.kapadia@gmail.com">Darshan.v.Kapadia@gmail.com</a></div>
+            <div>📞 Phone: +91 9969-71-81-91</div>
+        </div>
     </div>
 </footer>
 
@@ -107,6 +112,36 @@
             nameElement.classList.remove("zoom-out");
         }
     });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const getInTouchLink = document.getElementById("get-in-touch-link");
+    const footerSection = document.getElementById("contact");
+    const footerName = document.querySelector(".footer-name");
+
+    // Highlight "Get in Touch" when footer is in view
+    window.addEventListener("scroll", function () {
+        const footerTop = footerSection.getBoundingClientRect().top;
+        const viewportHeight = window.innerHeight;
+
+        if (footerTop < viewportHeight && footerTop > -footerSection.offsetHeight) {
+            getInTouchLink.classList.add("active");
+        } else {
+            getInTouchLink.classList.remove("active");
+        }
+    });
+
+    // Zoom effect for name in sticky bar
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 10) {
+            footerName.classList.add("scrolled");
+        } else {
+            footerName.classList.remove("scrolled");
+        }
+    });
+});
+
 </script>
 
 </body>
