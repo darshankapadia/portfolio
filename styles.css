@@ -290,7 +290,7 @@ header {
 }
 
 .upper-footer .name.zoom-out {
-    transform: scale(1.1); /* Slightly larger scale on zoom-in */
+    transform: scale(1); /* Slightly larger scale on zoom-in */
 }
 
 .upper-footer .name.zoom-in {
