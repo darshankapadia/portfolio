@@ -283,13 +283,14 @@ header {
     font-size: 1.5em; /* Keep the font size consistent */
     font-weight: bold;
     color: white;
+	margin-Left: 60px;
     Padding-left: 60px; /* Add space from the left edge */
     transform-origin: left center; /* Ensure zoom happens from the left */
     transition: transform 0.6s ease-in-out; /* Slow down the animation */
 }
 
 .upper-footer .name.zoom-out {
-    transform: scale(1.2); /* Slightly larger scale on zoom-in */
+    transform: scale(1.1); /* Slightly larger scale on zoom-in */
 }
 
 .upper-footer .name.zoom-in {
