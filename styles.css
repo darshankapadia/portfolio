@@ -30,6 +30,16 @@ body {
     font-size: 1.2em;
     font-weight: bold;
     color: white;
+	position: absolute; /* Allows precise positioning */
+    bottom: 20px; /* Adjust to position vertically (relative to the header) */
+    Left: 20px; /* Push the button to the extreme right */
+    padding: 10px 25px; /* Adjust padding for button size */
+    background-color: #48AAAD;
+    text-decoration: none;
+    border-radius: 20px; /* More curved edges */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Ensures proper alignment */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Navigation Links on the Right */
