@@ -333,18 +333,6 @@ body, html {
     margin-bottom: 20px;
 }
 
-.scroll-down {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.scroll-down:hover {
-    color: #48AAAD;
-}
-
 .about-container {
     max-width: 600px;
     padding: 20px;
