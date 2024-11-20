@@ -27,6 +27,8 @@
     <img src="Images/ProfilePic.png" alt="Profile Picture" class="profile-image">
     <h1>Darshan Kapadia</h1>
     <p>Data Analyst / Data Engineer</p>
+    <!-- Add a scroll-down button -->
+    <a href="#about" class="scroll-down">About Me</a>
 </header>
 
 <!-- About Me Section -->
@@ -119,9 +121,13 @@
             aboutPage.scrollIntoView({ behavior: "smooth" });
         });
 
-       
+        // Optional: Smooth scroll when the button is clicked
+        const scrollButton = document.querySelector(".scroll-down");
+        scrollButton.addEventListener("click", (event) => {
+            event.preventDefault();
+            aboutPage.scrollIntoView({ behavior: "smooth" });
+        });
     });
 </script>
-
 </body>
 </html>
