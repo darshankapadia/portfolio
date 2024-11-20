@@ -384,3 +384,40 @@ html {
     transform: translateY(-10px); /* Slight lift effect */
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow */
 }
+/* Landing Section with Background Image */
+#landing {
+    background: url('Images/Background.png') no-repeat center center/cover;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Adjust the scroll-down button for visibility */
+.scroll-down {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.scroll-down:hover {
+    color: #48AAAD;
+}
+
+/* About Me Section with Profile Image */
+.about-me .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #48AAAD;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: block;
+}
