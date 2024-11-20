@@ -43,24 +43,22 @@
     </div>
 </section>
 
-<!-- Projects Section -->
-<section id="projects" class="fullscreen">
-    <div class="container" data-aos="fade-up" data-aos-duration="1000">
-        <h2>Projects</h2>
-        <div class="project" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="150">
-            <h3>Project 1</h3>
-            <p>Description of Project 1. Here you can talk about what the project does and what tools you used.</p>
-            <a href="https://github.com/your-username/project-1" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="150">
-            <h3>Project 2</h3>
-            <p>Description of Project 2. Talk about your second project, its purpose, and any challenges you faced.</p>
-            <a href="https://github.com/your-username/project-2" target="_blank">View on GitHub</a>
-        </div>
-    </div>
+<section id="projects">
+	<div class="container">
+		<div class="project" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="150">
+			<h2>Project 1</h2>
+			<p>Description of Project 1. Here you can talk about what the project does and what tools you used.</p>
+			<a href="https://github.com/your-username/project-1" target="_blank">View on GitHub</a>
+		</div>
+
+		<div class="project" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="150">
+			<h2>Project 2</h2>
+			<p>Description of Project 2. Talk about your second project, its purpose, and any challenges you faced.</p>
+			<a href="https://github.com/your-username/project-2" target="_blank">View on GitHub</a>
+		</div>
+	</div>
 </section>
 
-<!-- Get in Touch Section -->
 <!-- Add the "id" to the footer -->
 <footer id="contact">
     <div class="social-icons">
@@ -114,28 +112,22 @@
 
 <!-- Smooth Scrolling -->
 <script>
-    // Smooth scroll when clicking nav links
-    document.querySelectorAll(".nav-link").forEach(link => {
-        link.addEventListener("click", (event) => {
+    document.addEventListener("DOMContentLoaded", () => {
+        const landingPage = document.getElementById("landing");
+        const aboutPage = document.getElementById("about");
+
+        // Smooth scroll when user scrolls on the landing page
+        landingPage.addEventListener("wheel", (event) => {
             event.preventDefault();
-            const targetId = event.target.getAttribute("href").substring(1);
-            document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
-        });
-    });
-
-    // Smooth scroll between sections on scroll
-    document.addEventListener("wheel", (event) => {
-        const sections = document.querySelectorAll(".fullscreen");
-        let currentIndex = [...sections].findIndex(section => {
-            const rect = section.getBoundingClientRect();
-            return rect.top === 0;
+            aboutPage.scrollIntoView({ behavior: "smooth" });
         });
 
-        if (event.deltaY > 0 && currentIndex < sections.length - 1) {
-            sections[currentIndex + 1].scrollIntoView({ behavior: "smooth" });
-        } else if (event.deltaY < 0 && currentIndex > 0) {
-            sections[currentIndex - 1].scrollIntoView({ behavior: "smooth" });
-        }
+        // Optional: Smooth scroll when the button is clicked
+        const scrollButton = document.querySelector(".scroll-down");
+        scrollButton.addEventListener("click", (event) => {
+            event.preventDefault();
+            aboutPage.scrollIntoView({ behavior: "smooth" });
+        });
     });
 </script>
 

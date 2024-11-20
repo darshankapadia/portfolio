@@ -297,14 +297,15 @@ header {
     transform: scale(1); /* Normal scale on zoom-out */
 }
 
-/* General Styles */
+/* General styles */
 body, html {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
+/* Fullscreen Sections */
 .fullscreen {
     height: 100vh; /* Full viewport height */
     display: flex;
@@ -315,59 +316,39 @@ body, html {
 }
 
 #landing {
-    background: #34495e;
+    background-color: #34495e;
     color: white;
 }
 
 #about {
-    background: #f7f7f9;
+    background-color: #f7f7f9;
     color: #2c3e50;
 }
 
-#projects {
-    background: #eaf2f8;
-    color: #34495e;
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 20px;
 }
 
-#contact {
-    background: #34495e;
+.scroll-down {
+    margin-top: 20px;
+    font-size: 1.5rem;
     color: white;
-}
-
-/* Navigation Links */
-.upper-footer {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: rgba(52, 73, 94, 0.9);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    color: white;
-}
-
-.footer-links a {
-    color: white;
-    margin: 0 10px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
+.scroll-down:hover {
     color: #48AAAD;
 }
 
-/* Section-Specific Styling */
-.about-container, .contact-info, .container {
+.about-container {
     max-width: 600px;
     padding: 20px;
     background: white;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.project {
-    margin: 20px 0;
-}
-
