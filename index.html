@@ -22,24 +22,24 @@
     </div>
 </div>
 
-<header>
+<!-- Landing Section -->
+<header id="landing" class="fullscreen">
     <img src="Images/ProfilePic.png" alt="Profile Picture" class="profile-image">
-    <h1>Welcome to My Portfolio</h1>
+    <h1>Darshan Kapadia</h1>
     <p>Data Analyst / Data Engineer</p>
-    <!-- Add the "Get in touch" button -->
-    <a href="#contact" class="get-in-touch">Get in touch →</a>
+    <!-- Add a scroll-down button -->
+    <a href="#about" class="scroll-down">↓ Scroll Down</a>
 </header>
 
-<section id="about">
-	<section class="about-me">
-		<div class="about-container" data-aos="fade-up" data-aos-duration="1000">
-			<h2>About Me</h2>
-			<p class="animated-text">
-				I am a passionate developer with expertise in SQL, data analytics, and cloud technologies. 
-				I enjoy working on interesting projects that solve real-world problems.
-			</p>
-		</div>
-	</section>
+<!-- About Me Section -->
+<section id="about" class="fullscreen">
+    <div class="about-container" data-aos="fade-up" data-aos-duration="1000">
+        <h2>About Me</h2>
+        <p class="animated-text">
+            I am a passionate developer with expertise in SQL, data analytics, and cloud technologies. 
+            I enjoy working on interesting projects that solve real-world problems.
+        </p>
+    </div>
 </section>
 
 <section id="projects">
@@ -106,6 +106,27 @@
             nameElement.classList.add("zoom-in");
             nameElement.classList.remove("zoom-out");
         }
+    });
+</script>
+
+<!-- Smooth Scrolling -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const landingPage = document.getElementById("landing");
+        const aboutPage = document.getElementById("about");
+
+        // Smooth scroll when user scrolls on the landing page
+        landingPage.addEventListener("wheel", (event) => {
+            event.preventDefault();
+            aboutPage.scrollIntoView({ behavior: "smooth" });
+        });
+
+        // Optional: Smooth scroll when the button is clicked
+        const scrollButton = document.querySelector(".scroll-down");
+        scrollButton.addEventListener("click", (event) => {
+            event.preventDefault();
+            aboutPage.scrollIntoView({ behavior: "smooth" });
+        });
     });
 </script>
 

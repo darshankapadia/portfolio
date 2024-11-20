@@ -296,3 +296,59 @@ header {
 .upper-footer .name.zoom-in {
     transform: scale(1); /* Normal scale on zoom-out */
 }
+
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Fullscreen Sections */
+.fullscreen {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#landing {
+    background-color: #34495e;
+    color: white;
+}
+
+#about {
+    background-color: #f7f7f9;
+    color: #2c3e50;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 20px;
+}
+
+.scroll-down {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.scroll-down:hover {
+    color: #48AAAD;
+}
+
+.about-container {
+    max-width: 600px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
