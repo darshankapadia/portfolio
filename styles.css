@@ -388,15 +388,28 @@ html {
 
 /* Adjust the scroll-down button for visibility */
 .scroll-down {
-    position: absolute; /* Absolute positioning for precise placement */
-    bottom: 20px; /* Distance from the bottom of the section */
-    left: 50%; /* Horizontally centered */
-    transform: translateX(-50%); /* Proper centering */
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding for rectangle size */
+    background-color: #48AAAD; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Adjust font size */
+    border-radius: 20px; /* Curved edges */
+    border: none; /* No border */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation for hover effects */
+    text-align: center; /* Center-align text inside */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for effect */
+    position: absolute; /* To position it precisely */
+    bottom: 20px; /* Adjust vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Keep it centered properly */
 }
 
 .scroll-down:hover {
-    color: #48AAAD;
+    background-color: #34495e; /* Darker background on hover */
+    transform: scale(1.1); /* Slight zoom effect */
 }
+
 
 /* About Me Section with Profile Image */
 .about-me .profile-image {
