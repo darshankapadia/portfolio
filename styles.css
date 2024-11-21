@@ -389,25 +389,24 @@ html {
 /* Adjust the scroll-down button for visibility */
 .scroll-down {
     display: inline-block;
-    padding: 10px 20px; /* Adjust padding for rectangle size */
+    padding: 15px 30px; /* Adjust padding for rectangle size */
     background-color: #48AAAD; /* Button background color */
     color: white; /* Text color */
     text-decoration: none; /* Remove underline */
-    font-size: 1rem; /* Adjust font size */
+    font-size: 1.2rem; /* Adjust font size */
     border-radius: 20px; /* Curved edges */
     border: none; /* No border */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation for hover effects */
+    transition: background-color 0.3s ease; /* Smooth color change on hover */
     text-align: center; /* Center-align text inside */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     position: absolute; /* To position it precisely */
     bottom: 20px; /* Adjust vertical position */
     left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Keep it centered properly */
+    margin-left: -60px; /* Center button (use half its width for adjustment) */
 }
 
 .scroll-down:hover {
     background-color: #34495e; /* Darker background on hover */
-    transform: scale(1.1); /* Slight zoom effect */
 }
 
 
@@ -435,6 +434,7 @@ html {
 }
 .landing-text p {
     margin-top: 0; /* Remove any additional space above the paragraph */
+	color: #D3D3D3;
 }
 
 /* Add the fade-in animation */
