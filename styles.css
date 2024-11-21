@@ -16,7 +16,7 @@ body {
     top: 0;
     width: 100%;
     height: 50px; /* Adjust based on preference */
-    background-color: #2c3e50; /* Footer background */
+    background-color: #000000; /* Footer background */
     z-index: 1000; /* Ensure it stays above other content */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     padding: 0 15px; /* Padding to keep content from touching edges */
