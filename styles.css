@@ -309,10 +309,10 @@ body, html {
 .fullscreen {
     height: 100vh; /* Full viewport height */
     display: flex;
-    justify-content: Left;
-    align-items: Left;
-    text-align: Left;
-    flex-direction: Left;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 #landing {
@@ -420,4 +420,35 @@ html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     display: block;
+}
+
+.landing-text {
+    position: absolute; /* Absolute positioning within the landing section */
+    left: 5%; /* Adjust this value to fine-tune the left alignment */
+    top: 40%; /* Adjust vertical position */
+    color: white; /* Ensure text is visible on a light background */
+    text-align: left;
+    font-size: 2.5em; /* Adjust font size as needed */
+    font-weight: bold;
+    animation: fadeInLeft 1.5s ease-out forwards; /* Attach animation */
+}
+
+/* Add the fade-in animation */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px); /* Slide from the left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Settle into place */
+    }
+}
+/* Add media queries if needed to adjust text positioning for smaller screens. */
+@media (max-width: 768px) {
+    .landing-text {
+        font-size: 1.8em;
+        left: 10%; /* Adjust position for smaller screens */
+        top: 30%;
+    }
 }
