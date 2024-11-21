@@ -431,6 +431,7 @@ html {
     font-size: 2.5em; /* Adjust font size as needed */
     font-weight: bold;
     animation: fadeInLeft 1.5s ease-out forwards; /* Attach animation */
+	margin-bottom: 10px; /* Reduce space below the heading */
 }
 
 /* Add the fade-in animation */
