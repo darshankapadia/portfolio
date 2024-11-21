@@ -335,7 +335,7 @@ body, html {
 }
 
 ..about-container {
-    max-width: 1200px; /* Control the width to prevent it from being too wide */
+    max-width: 1800px; /* Control the width to prevent it from being too wide */
     margin: 0 auto; /* Center the container */
     background-color: rgba(0, 0, 0, 0.8); /* Light black background (slightly transparent) */
     padding: 40px 60px; /* Add spacing inside the container */
