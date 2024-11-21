@@ -334,14 +334,15 @@ body, html {
     margin-bottom: 20px;
 }
 
-..about-container {
-    max-width: 1800px; /* Control the width to prevent it from being too wide */
-    margin: 0 auto; /* Center the container */
-    background-color: rgba(0, 0, 0, 0.8); /* Light black background (slightly transparent) */
-    padding: 40px 60px; /* Add spacing inside the container */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a soft shadow around the box */
-    text-align: center; /* Center text inside the container */
+.about-container {
+    width: calc(100% - 2cm); /* Subtract 1 cm from each side */
+    margin: 5cm auto; /* Add 5 cm margin at the top and bottom, auto centers horizontally */
+    background-color: #343434; /* Dark grey background */
+    padding: 40px; /* Inner padding for content spacing */
+    border-radius: 8px; /* Rounded corners for a smooth appearance */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+    color: white; /* Ensure text is white */
+    text-align: center; /* Center-align the text */
 }
 
 .about-container h2 {
