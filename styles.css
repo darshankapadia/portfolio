@@ -310,15 +310,15 @@ body, html {
     height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: Left;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
+    align-items: Left;
+    text-align: Left;
+    flex-direction: Left;
 }
 
-/* #landing { */
-    /* background-color: #34495e; */
-    /* color: white; */
-/* } */
+#landing {
+    background-color: #34495e;
+    color: white;
+}
 
 #about {
     background-color: #f7f7f9;
