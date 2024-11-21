@@ -333,18 +333,6 @@ body, html {
     margin-bottom: 20px;
 }
 
-.scroll-down {
-    margin-top: 70px;
-    font-size: 1.5rem;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.scroll-down:hover {
-    color: #48AAAD;
-}
-
 .about-container {
     max-width: 600px;
     padding: 20px;
@@ -400,11 +388,10 @@ html {
 
 /* Adjust the scroll-down button for visibility */
 .scroll-down {
-    margin-top: 40px;
-    font-size: 1.5rem;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    position: absolute; /* Absolute positioning for precise placement */
+    bottom: 20px; /* Distance from the bottom of the section */
+    left: 50%; /* Horizontally centered */
+    transform: translateX(-50%); /* Proper centering */
 }
 
 .scroll-down:hover {
