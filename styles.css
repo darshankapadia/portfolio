@@ -425,7 +425,7 @@ html {
 .landing-text {
     position: absolute; /* Absolute positioning within the landing section */
     left: 5%; /* Adjust this value to fine-tune the left alignment */
-    top: 60%; /* Adjust vertical position */
+    top: 25%; /* Adjust vertical position */
     color: white; /* Ensure text is visible on a light background */
     text-align: left;
     font-size: 2.5em; /* Adjust font size as needed */
