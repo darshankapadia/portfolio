@@ -309,16 +309,16 @@ body, html {
 .fullscreen {
     height: 100vh; /* Full viewport height */
     display: flex;
-    justify-content: center;
+    justify-content: Left;
     align-items: center;
     text-align: center;
     flex-direction: column;
 }
 
-#landing {
-    background-color: #34495e;
-    color: white;
-}
+/* #landing { */
+    /* background-color: #34495e; */
+    /* color: white; */
+/* } */
 
 #about {
     background-color: #f7f7f9;
