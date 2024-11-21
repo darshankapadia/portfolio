@@ -433,6 +433,9 @@ html {
     animation: fadeInLeft 1.5s ease-out forwards; /* Attach animation */
 	margin-bottom: 10px; /* Reduce space below the heading */
 }
+.landing-text p {
+    margin-top: 0; /* Remove any additional space above the paragraph */
+}
 
 /* Add the fade-in animation */
 @keyframes fadeInLeft {
