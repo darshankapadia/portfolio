@@ -180,45 +180,6 @@ header {
     text-align: center; /* Center the main content in the header */
 }
 
-/* About Me Section */
-/* .about-me { */
-    /* display: flex; */
-    /* justify-content: center; /* Center the content horizontally */ */
-    /* align-items: center; /* Center the content vertically */ */
-    /* padding: 50px 20px; /* Add padding for spacing */ */
-    /* background-color: #f7f7f9; /* Light background for contrast */ */
-/* } */
-
-/* .about-container { */
-    /* background-color: #ffffff; /* White background for the container */ */
-    /* border: 2px solid #48AAAD; /* Add a border to emphasize the rectangle */ */
-    /* border-radius: 20px; /* Rounded edges */ */
-    /* padding: 30px 40px; /* Add spacing inside the container */ */
-    /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */ */
-    /* max-width: 800px; /* Limit the container's width */ */
-    /* text-align: center; /* Center-align text inside the container */ */
-    /* animation: fadeIn 1.5s ease; /* Apply custom fade-in animation */ */
-/* } */
-
-/* Heading styles */
-/* .about-container h2 { */
-    /* font-size: 2em; */
-    /* color: #2c3e50; */
-    /* margin-bottom: 15px; */
-/* } */
-
-/* /* Paragraph styles */ */
-/* .about-container p { */
-    /* font-size: 1.2em; */
-    /* line-height: 1.6; */
-    /* color: #555555; */
-/* } */
-
-/* /* Animated text (optional) */ */
-/* .animated-text { */
-    /* display: inline-block; /* Allows animation to work properly */ */
-    /* animation: slideIn 2s ease forwards; /* Slide-in effect for text */ */
-/* } */
 
 /* Slide-in keyframes */
 @keyframes slideIn {
@@ -326,13 +287,13 @@ body, html {
     color: white;
 }
 
-.profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid white;
-    margin-bottom: 20px;
-}
+/* .profile-image { */
+    /* width: 150px; */
+    /* height: 150px; */
+    /* border-radius: 50%; */
+    /* border: 3px solid white; */
+    /* margin-bottom: 20px; */
+/* } */
 
 html {
     scroll-behavior: smooth; /* Enable smooth scrolling */
