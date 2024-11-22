@@ -76,15 +76,15 @@ p {
 }
 
 /* Image Area */
-.about-image {
-  margin-left: auto; /* Push the image to the far right */
-}
+/* .about-image { */
+  /* margin-left: auto; /* Push the image to the far right */ */
+/* } */
 
-.about-image img {
-  width: 100%; /* Make it responsive */
-  max-width: 300px; /* Limit the size */
-  border-radius: 8px; /* Optional: Rounded corners */
-}
+/* .about-image img { */
+  /* width: 100%; /* Make it responsive */ */
+  /* max-width: 300px; /* Limit the size */ */
+  /* border-radius: 8px; /* Optional: Rounded corners */ */
+/* } */
 /* Project container styles */
 .container {
     width: 80%;
@@ -280,11 +280,11 @@ body, html {
     color: white;
 }
 
-#about {
-    background-color: #48AAAD;
-	padding: 50px 20px; 
-    color: white;
-}
+/* #about { */
+    /* background-color: #48AAAD; */
+	/* padding: 50px 20px;  */
+    /* color: white; */
+/* } */
 
 html {
     scroll-behavior: smooth; /* Enable smooth scrolling */
@@ -390,6 +390,14 @@ html {
         top: 30%;
     }
 }
+#about {
+    display: flex; /* Create a flex container for the section */
+    align-items: center; /* Vertically align items in the center */
+    justify-content: center; /* Center content horizontally */
+    padding: 20px;
+    height: 100vh;
+    background-color: #48AAAD; /* Background color for the section */
+}
 
 .about-text {
     flex: 1; /* Take up half the available space */
@@ -397,6 +405,14 @@ html {
     flex-direction: row; /* Arrange the h1 and h2 side by side */
     gap: 20px; /* Add space between the texts */
     animation: fadeIn 2s ease-in-out; /* Add fade-in animation */
+}
+
+.about-image {
+    flex: 1; /* Take up half the space */
+    max-width: 300px; /* Set a maximum width for the image */
+    border-radius: 50%; /* Make the image circular if desired */
+    margin-right: 20px;
+    animation: slideIn 2s ease-in-out; /* Add slide-in animation */
 }
 
 .text-container h1,
