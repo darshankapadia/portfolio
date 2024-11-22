@@ -335,27 +335,25 @@ body, html {
 }
 
 .about-container {
-    width: calc(100% - 1cm); /* Wider container */
-    margin: 3cm auto; /* Reduce vertical margin */
-    background-color: #343434; /* Dark grey */
-    padding: 60px; /* Increase padding */
-    /* border-radius: 8px; /* Rounded corners */ */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
-    color: white;
-    text-align: center;
-    min-height: 250px; /* Ensure enough height */
+    width: calc(100% - 4cm); /* Wide container with 2 cm padding on each side */
+    margin: 5cm auto; /* Vertical spacing */
+    background-color: #343434; /* Light black background */
+    padding: 30px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    color: white; /* White text color */
+    text-align: center; /* Center-align the content */
 }
+
 .about-container h2 {
-    font-size: 2.5em;
+    font-size: 3em; /* Bold and large font for the header */
     margin-bottom: 20px;
-	color: white;
 }
 
 .about-container p {
-    font-size: 1.2em;
-    line-height: 1.6;
+    font-size: 1.5em; /* Readable font for paragraph */
+    line-height: 1.8; /* Line height for better spacing */
     margin-bottom: 20px;
-	color: white;
 }
 html {
     scroll-behavior: smooth; /* Enable smooth scrolling */
