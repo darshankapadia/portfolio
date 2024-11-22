@@ -75,16 +75,6 @@ p {
     color: #666;
 }
 
-/* Image Area */
-/* .about-image { */
-  /* margin-left: auto; /* Push the image to the far right */ */
-/* } */
-
-/* .about-image img { */
-  /* width: 100%; /* Make it responsive */ */
-  /* max-width: 300px; /* Limit the size */ */
-  /* border-radius: 8px; /* Optional: Rounded corners */ */
-/* } */
 /* Project container styles */
 .container {
     width: 80%;
@@ -410,15 +400,17 @@ html {
     text-align: left; /* Left-align the text */
 }
 .about-text h1 {
-    font-size: 2.5em; /* Adjust font size for h1 */
-    margin-bottom: 10px; /* Add space below the heading */
+    font-size: 3em; /* Adjust font size for h1 */
+    margin-bottom: 20px; /* Add space below the heading */
     color: #000; /* Black text color */
+	animation: slideIn 1.5s ease-out forwards;
 }
 
 .about-text h2 {
-    font-size: 1.2em; /* Adjust font size for h2 */
+    font-size: 1.5em; /* Adjust font size for h2 */
     line-height: 1.6; /* Improve line spacing */
     color: #333; /* Darker grey for readability */
+	animation: fadeIn 1.5s ease-out forwards;
 }
 
 .about-image-container {
