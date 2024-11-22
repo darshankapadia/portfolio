@@ -181,44 +181,44 @@ header {
 }
 
 /* About Me Section */
-.about-me {
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    padding: 50px 20px; /* Add padding for spacing */
-    background-color: #f7f7f9; /* Light background for contrast */
-}
+/* .about-me { */
+    /* display: flex; */
+    /* justify-content: center; /* Center the content horizontally */ */
+    /* align-items: center; /* Center the content vertically */ */
+    /* padding: 50px 20px; /* Add padding for spacing */ */
+    /* background-color: #f7f7f9; /* Light background for contrast */ */
+/* } */
 
-.about-container {
-    background-color: #ffffff; /* White background for the container */
-    border: 2px solid #48AAAD; /* Add a border to emphasize the rectangle */
-    border-radius: 20px; /* Rounded edges */
-    padding: 30px 40px; /* Add spacing inside the container */
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
-    max-width: 800px; /* Limit the container's width */
-    text-align: center; /* Center-align text inside the container */
-    animation: fadeIn 1.5s ease; /* Apply custom fade-in animation */
-}
+/* .about-container { */
+    /* background-color: #ffffff; /* White background for the container */ */
+    /* border: 2px solid #48AAAD; /* Add a border to emphasize the rectangle */ */
+    /* border-radius: 20px; /* Rounded edges */ */
+    /* padding: 30px 40px; /* Add spacing inside the container */ */
+    /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */ */
+    /* max-width: 800px; /* Limit the container's width */ */
+    /* text-align: center; /* Center-align text inside the container */ */
+    /* animation: fadeIn 1.5s ease; /* Apply custom fade-in animation */ */
+/* } */
 
 /* Heading styles */
-.about-container h2 {
-    font-size: 2em;
-    color: #2c3e50;
-    margin-bottom: 15px;
-}
+/* .about-container h2 { */
+    /* font-size: 2em; */
+    /* color: #2c3e50; */
+    /* margin-bottom: 15px; */
+/* } */
 
-/* Paragraph styles */
-.about-container p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #555555;
-}
+/* /* Paragraph styles */ */
+/* .about-container p { */
+    /* font-size: 1.2em; */
+    /* line-height: 1.6; */
+    /* color: #555555; */
+/* } */
 
-/* Animated text (optional) */
-.animated-text {
-    display: inline-block; /* Allows animation to work properly */
-    animation: slideIn 2s ease forwards; /* Slide-in effect for text */
-}
+/* /* Animated text (optional) */ */
+/* .animated-text { */
+    /* display: inline-block; /* Allows animation to work properly */ */
+    /* animation: slideIn 2s ease forwards; /* Slide-in effect for text */ */
+/* } */
 
 /* Slide-in keyframes */
 @keyframes slideIn {
@@ -321,7 +321,7 @@ body, html {
 }
 
 #about {
-    background-color: #000000;
+    background-color: White;
 	padding: 50px 20px; 
     color: white;
 }
@@ -334,27 +334,6 @@ body, html {
     margin-bottom: 20px;
 }
 
-.about-container {
-    width: calc(100% - 4cm); /* Wide container with 2 cm padding on each side */
-    margin: 5cm auto; /* Vertical spacing */
-    background-color: #343434; /* Light black background */
-    padding: 30px; /* Padding inside the box */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-    color: white; /* White text color */
-    text-align: center; /* Center-align the content */
-}
-
-.about-container h2 {
-    font-size: 3em; /* Bold and large font for the header */
-    margin-bottom: 20px;
-}
-
-.about-container p {
-    font-size: 1.5em; /* Readable font for paragraph */
-    line-height: 1.8; /* Line height for better spacing */
-    margin-bottom: 20px;
-}
 html {
     scroll-behavior: smooth; /* Enable smooth scrolling */
 }
