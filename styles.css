@@ -400,11 +400,20 @@ html {
 }
 
 .about-text {
-    flex: 1; /* Take up half the available space */
-    display: flex;
-    flex-direction: row; /* Arrange the h1 and h2 side by side */
-    gap: 20px; /* Add space between the texts */
-    animation: fadeIn 2s ease-in-out; /* Add fade-in animation */
+    position: absolute; /* Absolute positioning within the landing section */
+    left: 5%; /* Adjust this value to fine-tune the left alignment */
+    top: 25%; /* Adjust vertical position */
+    color: white; /* Ensure text is visible on a light background */
+    text-align: left;
+    font-size: 2.5em; /* Adjust font size as needed */
+    font-weight: bold;
+    animation: fadeInLeft 1.5s ease-out forwards; /* Attach animation */
+	margin-bottom: 10px; /* Reduce space below the heading */
+}
+.text-container h1,
+.text-container h2 {
+    margin-top: 0; /* Remove any additional space above the paragraph */
+	color: white;
 }
 
 /* .about-image { */
@@ -415,11 +424,6 @@ html {
     /* animation: slideIn 2s ease-in-out; /* Add slide-in animation */ */
 /* } */
 
-.text-container h1,
-.text-container h2 {
-    flex: 1; /* Ensure both take equal space */
-    margin: 0;
-}
 
 @keyframes fadeIn {
     from {
