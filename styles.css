@@ -76,15 +76,15 @@ p {
 }
 
 /* Image Area */
-/* .about-image { */
-  /* margin-left: auto; /* Push the image to the far right */ */
-/* } */
+.about-image {
+  margin-left: auto; /* Push the image to the far right */
+}
 
-/* .about-image img { */
-  /* width: 100%; /* Make it responsive */ */
-  /* max-width: 300px; /* Limit the size */ */
-  /* border-radius: 8px; /* Optional: Rounded corners */ */
-/* } */
+.about-image img {
+  width: 100%; /* Make it responsive */
+  max-width: 300px; /* Limit the size */
+  border-radius: 8px; /* Optional: Rounded corners */
+}
 /* Project container styles */
 .container {
     width: 80%;
@@ -407,13 +407,13 @@ html {
     animation: fadeIn 2s ease-in-out; /* Add fade-in animation */
 }
 
-.about-image {
-    flex: 1; /* Take up half the space */
-    max-width: 300px; /* Set a maximum width for the image */
-    border-radius: 50%; /* Make the image circular if desired */
-    margin-right: 20px;
-    animation: slideIn 2s ease-in-out; /* Add slide-in animation */
-}
+/* .about-image { */
+    /* flex: 1; /* Take up half the space */ */
+    /* max-width: 300px; /* Set a maximum width for the image */ */
+    /* border-radius: 50%; /* Make the image circular if desired */ */
+    /* margin-right: 20px; */
+    /* animation: slideIn 2s ease-in-out; /* Add slide-in animation */ */
+/* } */
 
 .text-container h1,
 .text-container h2 {
