@@ -76,15 +76,15 @@ p {
 }
 
 /* Profile image */
-.profile-image {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 4px solid white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 10px auto;
-}
+/* .profile-image { */
+    /* width: 250px; */
+    /* height: 250px; */
+    /* border-radius: 50%; */
+    /* border: 4px solid white; */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    /* display: block; */
+    /* margin: 10px auto; */
+/* } */
 
 /* Project container styles */
 .container {
@@ -286,14 +286,6 @@ body, html {
 	padding: 50px 20px; 
     color: white;
 }
-
-/* .profile-image { */
-    /* width: 150px; */
-    /* height: 150px; */
-    /* border-radius: 50%; */
-    /* border: 3px solid white; */
-    /* margin-bottom: 20px; */
-/* } */
 
 html {
     scroll-behavior: smooth; /* Enable smooth scrolling */
