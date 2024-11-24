@@ -50,7 +50,23 @@
     </div>
 </section>
 
-
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const aboutSection = document.querySelector("#about");
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        document.querySelector(".about-text h1").classList.add("animate-slideInRight");
+                        document.querySelector(".about-text h2").classList.add("animate-fadeIn");
+                    }
+                });
+            },
+            { threshold: 0.5 } // Trigger when 50% of the section is visible
+        );
+        observer.observe(aboutSection);
+    });
+</script>
 
 <!-- Projects Section -->
 <section id="projects" class="fullscreen">
