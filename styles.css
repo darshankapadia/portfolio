@@ -420,14 +420,11 @@ html {
 	/* animation: fadeIn 1.2s ease-out forwards; */
 }
 <style>
-    /* .about-text h2 { */
-        /* opacity: 0; */
-        /* transform: translateX(-20px); /* Initial transform */ */
-    /* } */
     .animate-fadeIn {
         animation: fadeIn 1.2s ease-out forwards;
     }
 </style>
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -439,13 +436,11 @@ html {
     }
 }
 
-
-
 .about-text h1 {
     font-size: 4em; /* Adjust font size for h1 */
     margin-bottom: 20px; /* Add space below the heading */
     color: #000; /* Black text color */
-	/* animation: typing 3s steps(30, end), blink 0.6s step-end infinite; */
+	animation: typing 3s steps(30, end), blink 0.6s step-end infinite;
 }
 <style>
 	.typing-effect {
