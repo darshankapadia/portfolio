@@ -440,9 +440,10 @@ html {
 .typing-effect {
 	display: inline-block;
 	overflow: hidden; /* Hide the overflowing text */
-	/* border-right: 2px solid black; /* Cursor effect */ */
-	width: 0; /* Start with no width */
-	animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
+	white-space: nowrap; /* Prevent text wrapping */
+    border-right: 2px solid black; /* Simulate a cursor effect */
+    width: 0; /* Start with no width */
+    animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
 }
 
 /* Keyframes for typing animation */
@@ -462,4 +463,10 @@ html {
     to {
         border-color: black;
     }
+}
+.typing-effect:nth-child(2) {
+    animation-delay: 3.5s; /* Start after the first line finishes */
+}
+.about-text h1 {
+    height: auto; /* Prevent shifting due to content */
 }
