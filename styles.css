@@ -438,6 +438,7 @@ html {
     color: #000; /* Black text color */
 }
 .typing-effect {
+	display: inline-block;
 	overflow: hidden; /* Hide the overflowing text */
 	/* border-right: 2px solid black; /* Cursor effect */ */
 	width: 0; /* Start with no width */
