@@ -51,7 +51,7 @@
 </section>
 
 <script>
-   document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const aboutSection = document.querySelector("#about");
     const h1 = document.querySelector(".about-text h1");
     const h2 = document.querySelector(".about-text h2");
@@ -59,10 +59,16 @@
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
+                // Check if the section is in view
+                console.log('Intersection observed:', entry.isIntersecting);
+
                 if (entry.isIntersecting) {
-                    // Add the typing effect class to h1
+                    // Log when the h1 animation starts
+                    console.log('Applying typing effect to h1');
                     h1.classList.add("typing-effect");
-                    // Add fade-in effect to h2
+
+                    // Log when the h2 animation starts
+                    console.log('Applying fadeIn effect to h2');
                     h2.classList.add("animate-fadeIn");
                 }
             });
@@ -71,6 +77,8 @@
     );
 
     observer.observe(aboutSection);
+});
+
 });
 </script>
 
