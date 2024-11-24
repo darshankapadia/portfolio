@@ -443,9 +443,11 @@ html {
 	/* width: 0; /* Start with no width */ */
 	/* animation: typing 3s steps(30, end), blink 0.5s step-end infinite; */
 /* } */
-.typing-effect {
+.about-text h1.typing-effect {
     background-color: yellow; /* Temporary for testing */
-	width: auto;
+	border: 2px solid red;  /* Use border for additional visibility */
+    width: auto;
+	animation: blink 0.5s step-end infinite;
 }
 /* Keyframes for typing animation */
 @keyframes typing {
