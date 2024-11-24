@@ -435,6 +435,7 @@ html {
 .about-text h1 {
     font-size: 4em; /* Adjust font size for h1 */
     margin-bottom: 20px; /* Add space below the heading */
+	animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
     color: #000; /* Black text color */
 }
 /* .typing-effect { */
