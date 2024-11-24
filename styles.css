@@ -445,6 +445,7 @@ html {
 /* } */
 .typing-effect {
     background-color: yellow; /* Temporary for testing */
+	width: auto;
 }
 /* Keyframes for typing animation */
 @keyframes typing {
