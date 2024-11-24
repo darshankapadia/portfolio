@@ -444,6 +444,7 @@ html {
     border-right: 2px solid black; /* Simulate a cursor effect */
     width: 0; /* Start with no width */
     animation: typing 2s steps(30, end), blink 0.5s step-end infinite;
+	animation-fill-mode: forwards;
 }
 
 /* Keyframes for typing animation */
