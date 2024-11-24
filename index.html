@@ -51,21 +51,27 @@
 </section>
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const aboutSection = document.querySelector("#about");
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        document.querySelector(".about-text h1").classList.add("typing-effect");
-                        document.querySelector(".about-text h2").classList.add("animate-fadeIn");
-                    }
-                });
-            },
-            { threshold: 0.5 } // Trigger when 50% of the section is visible
-        );
-        observer.observe(aboutSection);
-    });
+   document.addEventListener("DOMContentLoaded", () => {
+    const aboutSection = document.querySelector("#about");
+    const h1 = document.querySelector(".about-text h1");
+    const h2 = document.querySelector(".about-text h2");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    // Add the typing effect class to h1
+                    h1.classList.add("typing-effect");
+                    // Add fade-in effect to h2
+                    h2.classList.add("animate-fadeIn");
+                }
+            });
+        },
+        { threshold: 0.5 }
+    );
+
+    observer.observe(aboutSection);
+});
 </script>
 
 <!-- Projects Section -->
