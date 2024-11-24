@@ -422,22 +422,43 @@ html {
 .about-image {
     /* max-width: 200px; /* Limit the size of the image */ */
     /* border-radius: 50%; /* Make the image circular */ */
-	border: 5px solid #000000; /* Add a 5px solid border with a custom color */
+	border: 5px solid #; /* Add a 5px solid border with a custom color */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
-/* Add initial styles for hidden state */
-.about-text h1,
-.about-text h2 {
-    opacity: 0;
-    transform: translateX(-20px); /* Initial transform */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Animation classes */
-.animate-slideInRight {
-    animation: slideInRight 1.2s ease-out forwards;
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
+<style>
+    .about-text h1,
+    .about-text h2 {
+        opacity: 0;
+        transform: translateX(-20px); /* Initial transform */
+    }
 
-.animate-fadeIn {
-    animation: fadeIn 1.2s ease-out forwards;
-}
+    .animate-slideInRight {
+        animation: slideInRight 1.2s ease-out forwards;
+    }
+
+    .animate-fadeIn {
+        animation: fadeIn 1.2s ease-out forwards;
+    }
+</style>
