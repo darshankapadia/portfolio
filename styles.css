@@ -435,21 +435,15 @@ html {
 .about-text h1 {
     font-size: 4em; /* Adjust font size for h1 */
     margin-bottom: 20px; /* Add space below the heading */
-	animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
     color: #000; /* Black text color */
 }
-/* .typing-effect { */
-	/* overflow: hidden; /* Hide the overflowing text */ */
-	/* border-right: 2px solid black; /* Cursor effect */ */
-	/* width: 0; /* Start with no width */ */
-	/* animation: typing 3s steps(30, end), blink 0.5s step-end infinite; */
-/* } */
-.about-text h1.typing-effect {
-    background-color: yellow; /* Temporary for testing */
-	border: 2px solid red;  /* Use border for additional visibility */
-    width: auto;
-	animation: blink 0.5s step-end infinite;
+.typing-effect {
+	overflow: hidden; /* Hide the overflowing text */
+	border-right: 2px solid black; /* Cursor effect */
+	width: 0; /* Start with no width */
+	animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
 }
+
 /* Keyframes for typing animation */
 @keyframes typing {
     from {
@@ -459,7 +453,6 @@ html {
         width: 100%; /* Full width of the text */
     }
 }
-
 /* Cursor blinking effect */
 @keyframes blink {
     from {
